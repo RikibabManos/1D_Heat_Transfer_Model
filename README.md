@@ -24,11 +24,11 @@ Where:
 
 ### Finite Difference Scheme
 The equation is discretized using an explicit Forward-Time Central-Space (FTCS) scheme:
-$$ T_{i}^{n+1} = T_{i}^{n} + \frac{\alpha \Delta t}{\Delta x^2} (T_{i+1}^{n} - 2T_{i}^{n} + T_{i-1}^{n}) $$
+$T_{i}^{n+1} = T_{i}^{n} + \frac{\alpha \Delta t}{\Delta x^2} (T_{i+1}^{n} - 2T_{i}^{n} + T_{i-1}^{n})$
 
 **Stability Condition:** 
 To ensure mathematical stability (avoiding numerical divergence), the time step $\Delta t$ and spatial step $\Delta x$ strictly adhere to the Fourier number constraint:
-$$ Fo = \frac{\alpha \Delta t}{\Delta x^2} \le 0.5 $$
+$Fo = \frac{\alpha \Delta t}{\Delta x^2} \le 0.5$
 
 ## Architecture & Tech Stack
 *   **Language:** C++11 (or higher)
