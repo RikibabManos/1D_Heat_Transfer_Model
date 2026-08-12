@@ -43,7 +43,7 @@ int main() {
 
     double fourier_stab_criterion = aerospace_aluminium.thermal_diffusivity * rod.time_interval / (rod.spatial_interval * rod.spatial_interval); // check for instability in calculation
     if (fourier_stab_criterion > 0.5){
-        cout << "Fourier stability criterion is greater than zero, enter different intervals or diffusivity!" << endl;
+        cout << "Fourier stability criterion is greater than 0.5, enter different intervals or diffusivity!" << "\n";
         exit(1);
     }
 
